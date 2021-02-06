@@ -1,0 +1,49 @@
+<html>
+   <head>
+        <title>Quiz Module</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand mx-auto" href="#" id="navbarTitle">Quiz</a>
+        </nav>
+        <br/>
+        <div class="container" id="quiz">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title" id="question"></h4>
+                    <div>
+                        <input type="radio" name="option" id="a1">
+                        <label for="a1" class="card-text" id="o1"></label> <br/>
+                        <input type="radio" name="option" id="a2">
+                        <label for="a2" class="card-text" id="o2"></label> <br/>
+                        <input type="radio" name="option" id="a3">
+                        <label for="a3" class="card-text" id="o3"></label> <br/>
+                        <input type="radio" name="option" id="a4">
+                        <label for="a4" class="card-text" id="o4"></label> <br/> 
+                        <div class="alert alert-success" id="correct">
+                            <strong>Correct</strong>
+                        </div>
+                        <div class="alert alert-danger" id="incorrect">
+                            <strong>Incorrect</strong>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning" id="submit">Submit</button>
+                    <button class="btn btn-success" id="next">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="result">
+            <h1>Answer Key</h1> <br/>
+            <div class="card">
+                <div class="card-body">
+                    <ul id="resultList"></ul>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-info" id="restart">Restart</button> <br/>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
